@@ -1,0 +1,146 @@
+/* ==========================================================
+   NISRINA TAMARA LUBIS — PORTFOLIO
+   responsive.css — tablet & mobile breakpoints
+   ========================================================== */
+
+/* ---------- 1200px : slightly tighter gutters ---------- */
+@media (max-width: 1200px) {
+  :root { --gutter: clamp(24px, 5vw, 72px); }
+}
+
+/* ---------- 1024px : tablet landscape ---------- */
+@media (max-width: 1024px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-body { grid-column: 1; }
+  .about-stats { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
+  .stat:nth-child(3) { border-left: none; padding-left: 0; }
+
+  .identity-cards { grid-template-columns: 1fr; }
+
+  .contrib-grid { grid-template-columns: 1fr; }
+  .contrib-card:nth-child(5) { max-width: 100%; }
+
+  .skill-wall { grid-template-columns: 1fr; gap: 32px; }
+
+  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+
+  .hero-shape { right: -18%; opacity: 0.4; }
+
+  .hero-inner-grid { grid-template-columns: 1fr 0.75fr; gap: 28px; }
+  .hero-video-card { max-width: 280px; }
+}
+
+/* ---------- 768px : tablet ---------- */
+@media (max-width: 768px) {
+  section { padding: 64px 0; }
+
+  /* Nav -> hamburger */
+  .nav-links, .nav-actions { display: none; }
+  .nav-toggle { display: flex; }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(320px, 82vw);
+    background: var(--navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 40px var(--gutter);
+    transform: translateX(100%);
+    transition: transform var(--dur-m) var(--ease);
+    z-index: 490;
+  }
+  .mobile-menu.is-open { transform: translateX(0); }
+  .mobile-link {
+    color: var(--white);
+    font-family: var(--font-head);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .mobile-cta {
+    margin-top: 24px;
+    display: inline-block;
+    text-align: center;
+    background: var(--baby-blue);
+    color: var(--navy);
+    padding: 14px 0;
+    border-radius: 999px;
+    font-weight: 700;
+  }
+
+  /* Hero */
+  .hero { padding-top: 80px; min-height: auto; padding-bottom: 90px; }
+  .hero-headline { font-size: clamp(2.2rem, 9vw, 3rem); }
+  .hero-sub { max-width: 100%; }
+  .hero-shape { width: 70vw; right: -20%; top: 2%; }
+  .hero-dots { left: auto; right: 6%; top: 8%; width: 60px; }
+  .hero-cta-row { flex-direction: column; align-items: stretch; }
+  .hero-cta-row .btn { text-align: center; justify-content: center; }
+  .scroll-cue { display: none; }
+
+  .hero-inner-grid { grid-template-columns: 1fr; }
+  .hero-visual { order: -1; margin-bottom: 8px; }
+  .hero-video-card { max-width: 540px; aspect-ratio: 1 / 1.15; margin: 0 auto; }
+
+  /* About */
+  .about-stats { grid-template-columns: 1fr 1fr; }
+
+  /* Timeline */
+  .timeline-toggle { flex-direction: column; gap: 10px; }
+  .timeline-period { padding-top: 0; }
+
+  /* Contributions */
+  .contrib-card { padding: 26px; }
+
+  /* Footer */
+  .footer-inner { flex-direction: column; align-items: flex-start; text-align: left; }
+}
+
+/* ---------- 480px : large mobile ---------- */
+@media (max-width: 480px) {
+  :root { --gutter: 20px; }
+
+  .hero-headline { font-size: 2.1rem; }
+  .hero-labels { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .hero-label { width: 100%; text-align: center; }
+  .hero-plus { display: none; }
+  .hero-video-card { max-width: 210px; }
+
+  .about-stats { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .stat { border-left: none; padding-left: 0; }
+
+  .identity-card { padding: 40px 22px 24px; }
+  .id-card-avatar { width: 42px; height: 42px; }
+  .id-card-hole { top: 14px; width: 14px; height: 14px; }
+
+  .contrib-card { padding: 22px; }
+
+  .skill-wall { gap: 26px; }
+
+  .education-meta { flex-direction: column; gap: 4px; }
+  .education-sep { display: none; }
+
+  .contact-form { padding: 26px; }
+  .contact-details li { flex-direction: column; gap: 4px; }
+  .contact-label { flex: none; }
+
+  .back-to-top { right: 16px; bottom: 16px; width: 40px; height: 40px; }
+}
+
+/* ---------- 375px / 320px : small mobile ---------- */
+@media (max-width: 375px) {
+  .hero-headline { font-size: 1.85rem; }
+  .section-headline { font-size: 1.6rem; }
+  .stat-number { font-size: 2rem; }
+  .contrib-tags span { font-size: 0.68rem; padding: 5px 10px; }
+}
+
+/* ---------- Guard against horizontal overflow ---------- */
+html, body { max-width: 100%; overflow-x: hidden; }
+.hero-decor svg, .hero-shape { max-width: 100vw; }

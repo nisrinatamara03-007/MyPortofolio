@@ -1,0 +1,86 @@
+/* ==========================================================
+   NISRINA TAMARA LUBIS — PORTFOLIO
+   animations.css — keyframes, reveal states, reduced motion
+   ========================================================== */
+
+/* ---------- Hero entrance (page-load sequence) ---------- */
+.hero-eyebrow.reveal,
+.hero-headline.reveal,
+.hero-sub.reveal,
+.hero-labels.reveal,
+.hero-cta-row.reveal,
+.hero-visual.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+}
+body.hero-ready .hero-eyebrow.reveal   { animation: heroFadeUp var(--dur-l) var(--ease) forwards 0.05s; }
+body.hero-ready .hero-headline.reveal  { animation: heroFadeUp var(--dur-l) var(--ease) forwards 0.18s; }
+body.hero-ready .hero-sub.reveal       { animation: heroFadeUp var(--dur-l) var(--ease) forwards 0.34s; }
+body.hero-ready .hero-labels.reveal    { animation: heroFadeUp var(--dur-l) var(--ease) forwards 0.46s; }
+body.hero-ready .hero-cta-row.reveal   { animation: heroFadeUp var(--dur-l) var(--ease) forwards 0.56s; }
+body.hero-ready .hero-visual.reveal    { animation: heroFadeUp var(--dur-l) var(--ease) forwards 0.3s; }
+
+@keyframes heroFadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Scroll reveal (IntersectionObserver driven) ---------- */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children inside a revealed group */
+.identity-cards .identity-card,
+.contrib-grid .contrib-card,
+.skill-wall .skill-group {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+}
+.identity-cards.is-visible .identity-card,
+.contrib-grid.is-visible .contrib-card,
+.skill-wall.is-visible .skill-group {
+  opacity: 1;
+  transform: translateY(0);
+}
+.identity-cards.is-visible .identity-card:nth-child(1) { transition-delay: 0.05s; }
+.identity-cards.is-visible .identity-card:nth-child(2) { transition-delay: 0.15s; }
+.identity-cards.is-visible .identity-card:nth-child(3) { transition-delay: 0.25s; }
+
+.contrib-grid.is-visible .contrib-card:nth-child(1) { transition-delay: 0.04s; }
+.contrib-grid.is-visible .contrib-card:nth-child(2) { transition-delay: 0.1s; }
+.contrib-grid.is-visible .contrib-card:nth-child(3) { transition-delay: 0.16s; }
+.contrib-grid.is-visible .contrib-card:nth-child(4) { transition-delay: 0.22s; }
+.contrib-grid.is-visible .contrib-card:nth-child(5) { transition-delay: 0.28s; }
+
+/* ---------- Timeline reveal ---------- */
+.timeline-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+}
+.timeline-item.is-visible { opacity: 1; transform: translateY(0); }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-up, .timeline-item,
+  .identity-card, .contrib-card, .skill-group,
+  .hero-eyebrow.reveal, .hero-headline.reveal, .hero-sub.reveal,
+  .hero-labels.reveal, .hero-cta-row.reveal, .hero-visual.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
