@@ -68,10 +68,10 @@
     'identity.dept3': { id: 'Divisi Hubungan Klien', en: 'Client Relations Division' },
     'identity.lead1': { id: 'Kepemimpinan Tim', en: 'Team Leadership' },
     'identity.lead2': { id: 'Perencanaan Tugas', en: 'Task Planning' },
-    'identity.lead3': { id: 'Monitoring KPI &amp; Sprint', en: 'KPI &amp; Sprint Monitoring' },
+    'identity.lead3': { id: 'Monitoring KPI & Sprint', en: 'KPI & Sprint Monitoring' },
     'identity.lead4': { id: 'Code Review', en: 'Code Review' },
     'identity.lead5': { id: 'Kontrol Kualitas', en: 'Quality Control' },
-    'identity.lead6': { id: 'Onboarding &amp; Pelatihan', en: 'Onboarding &amp; Training' },
+    'identity.lead6': { id: 'Onboarding & Pelatihan', en: 'Onboarding & Training' },
     'identity.lead7': { id: 'Implementasi SOP', en: 'SOP Implementation' },
     'identity.conn1': { id: 'Pengumpulan Kebutuhan', en: 'Requirement Gathering' },
     'identity.conn2': { id: 'Komunikasi Klien Korporat', en: 'Corporate Client Communication' },
@@ -128,7 +128,7 @@
       id: "Aplikasi berbasis PHP/MySQL yang dibangun untuk mendukung proses\n            keuangan internal perusahaan.",
       en: "A PHP/MySQL application built to support the company's internal\n            finance processes."
     },
-    'contrib.title3': { id: 'Sistem Inventaris TI &amp; Kepabeanan', en: 'IT Inventory &amp; Customs System' },
+    'contrib.title3': { id: 'Sistem Inventaris TI & Kepabeanan', en: 'IT Inventory & Customs System' },
     'contrib.desc3': {
       id: 'Sistem IT Inventory Kepabeanan yang dibangun untuk klien korporat,\n            mencakup PO/GR, Sales Order/GI, Manufacturing, Transfer Orders,\n            Stock Adjustment, Stock Opname, dokumen kepabeanan, dan akuntansi dasar.',
       en: 'A customs (Kepabeanan) IT Inventory system built for corporate\n            clients, covering PO/GR, Sales Order/GI, Manufacturing, Transfer\n            Orders, Stock Adjustment, Stock Opname, customs documentation,\n            and basic accounting.'
