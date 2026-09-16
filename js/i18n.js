@@ -100,7 +100,7 @@
     'journey.tag2': { id: 'Pengembangan', en: 'Development' },
     'journey.period2': { id: 'Januari 2019 — Desember 2023', en: 'January 2019 — December 2023' },
     'journey.dev1': { id: 'Mengembangkan aplikasi PHP/MySQL untuk klien korporat', en: 'Developed PHP/MySQL applications for corporate clients' },
-    'journey.dev2': { id: 'Membangun sistem IT Inventory untuk Kepabeanan (Customs)', en: 'Built an IT Inventory system for Customs (Kepabeanan)' },
+    'journey.dev2': { id: 'Membangun sistem IT Inventory untuk Kepabeanan (regulasi PMK Bea Cukai)', en: 'Built an IT Inventory system for Customs (PMK Bea Cukai regulatory)' },
     'journey.dev3': { id: 'Mengikuti ketentuan regulasi PMK Bea Cukai', en: 'Followed PMK Bea Cukai regulatory requirements' },
     'journey.dev4': { id: 'Merancang alur integrasi ERP', en: 'Designed ERP integration workflows' },
     'journey.dev5': { id: 'Membangun Temporary Database untuk sinkronisasi push-pull harian', en: 'Built a Temporary Database for daily push-pull sync' },
