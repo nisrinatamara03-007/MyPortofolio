@@ -78,7 +78,7 @@
     'identity.conn3': { id: 'Manajemen Stakeholder', en: 'Stakeholder Management' },
     'identity.conn4': { id: 'Koordinasi Lintas Fungsi', en: 'Cross-functional Coordination' },
     'identity.conn5': { id: 'Integrasi ERP', en: 'ERP Integration' },
-    'identity.conn6': { id: 'Pemrosesan Batch', en: 'Batch Processing' },
+    'identity.conn6': { id: 'Staging Database', en: 'Staging Database' },
     'identity.conn7': { id: 'Dukungan Onsite', en: 'Onsite Support' },
 
     'journey.eyebrow': { id: 'Perjalanan Karier', en: 'Career Journey' },
@@ -95,7 +95,7 @@
     'journey.sup8': { id: 'Menyusun SOP dan alur kerja proyek', en: 'Builds SOPs and project workflows' },
     'journey.sup9': { id: 'Melatih dan meng-onboarding developer baru', en: 'Trains and onboards new developers' },
     'journey.sup10': { id: 'Memegang project ownership end-to-end, dari kontrak hingga go-live', en: 'Owns projects end-to-end, from contract to go-live' },
-    'journey.sup11': { id: 'Turut merancang inisiatif digitalisasi dokumen OCR / AI', en: 'Co-designed an OCR / AI document digitalization initiative' },
+    'journey.sup11': { id: 'Merancang konsep metode Staging Database sebagai bridging system', en: 'Designing the concept of a Staging Database method as a bridging system' },
     'journey.sup12': { id: 'Mengawasi batch processing dan integrasi data', en: 'Oversees batch processing and data integration' },
     'journey.tag2': { id: 'Pengembangan', en: 'Development' },
     'journey.period2': { id: 'Januari 2019 — Desember 2023', en: 'January 2019 — December 2023' },
@@ -135,13 +135,13 @@
     },
     'contrib.title4': { id: 'Integrasi Data ERP', en: 'ERP Data Integration' },
     'contrib.desc4': {
-      id: "Arsitektur Temporary Database yang memungkinkan sinkronisasi\n            push-pull harian antara ERP klien dan aplikasi PHP/MySQL-nya.",
-      en: "A Temporary Database architecture enabling daily push-pull\n            synchronization between a client's ERP and its PHP/MySQL\n            application."
+      id: "Merancang ruang lingkup dan spesifikasi sistem web Add-on I-Gateway dan \n merancang konsep metode Staging Database sebagai bridging system \n untuk mengarahkan tim pengembang dalam membangun data mirroring ke sistem IT Inventory.",
+      en: "Designed the project scope, system specifications,\n and Staging Database architecture for the Add-on I-Gateway\n web application to direct the development team in building a data mirroring system\n for IT Inventory."
     },
-    'contrib.title5': { id: 'Inisiatif Digitalisasi OCR', en: 'OCR Digitalization Initiative' },
+    'contrib.title5': { id: 'Perancangan Ruang Lingkup & Alur Sistem', en: 'Project Scope & Requirements Planning' },
     'contrib.desc5': {
-      id: 'Inisiatif digitalisasi dokumen yang dirancang bersama tim,\n            dibangun di atas konsep Google API / AI.',
-      en: 'A document digitalization initiative co-designed with the team,\n            built around Google API / AI concepts.'
+      id: 'Menyusun ruang lingkup proyek aplikasi, mulai dari perancangan flowchart \n alur kerja hingga pemetaan estimasi timeline pelaksanaan.',
+      en: 'Defining the application project scope, from designing \n workflow flowcharts to mapping execution timeline estimates.'
     },
 
     'skills.eyebrow': { id: 'Keahlian Teknis', en: 'Technical Skills' },
@@ -152,7 +152,7 @@
     'skills.group7': { id: 'Klien', en: 'Client' },
     'skills.int1': { id: 'Integrasi ERP', en: 'ERP Integration' },
     'skills.int2': { id: 'Push-Pull Data Harian', en: 'Daily Data Push-Pull' },
-    'skills.int3': { id: 'Pemrosesan Batch', en: 'Batch Processing' },
+    'skills.int3': { id: 'Staging Database', en: 'Staging Database' },
     'skills.mgmt1': { id: 'Perencanaan Tugas', en: 'Task Planning' },
     'skills.mgmt2': { id: 'Monitoring KPI', en: 'KPI Monitoring' },
     'skills.mgmt3': { id: 'Monitoring Sprint', en: 'Sprint Monitoring' },
